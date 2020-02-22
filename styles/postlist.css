@@ -2,14 +2,17 @@
     position: relative;
     width: 40%;
     background: #fff;
-    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px;
     border-radius: 15px;
     overflow: scroll;
 }
-    
+
+.post:hover {
+    box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
+}
+
 .post-left {
-    width: 15%;            
+    width: 15%;
     max-width: 15%;
     display: table-cell;
     vertical-align: middle;
@@ -20,16 +23,16 @@
 }
 
 .post-content {
-    width: 75%;           
+    width: 75%;
     display: table-cell;
     text-align: left;
     background-color: #E8E8E8;
     color: #000000;
     border-radius: 0 15px 15px 0;
-    padding: 0 20px;      
+    padding: 0 20px;
 }
 
-.post-title{
+.post-title {
     font-family: 'Roboto';
     font-weight: bold;
     color: grey;
@@ -48,8 +51,8 @@
     font-size: 30px;
 }
 
-.post-desc{
-    height: 85px;
+.post-desc {
+    height: 70px;
     margin-bottom: 0 !important;
     overflow: hidden;
     font-family: 'Roboto';
@@ -75,7 +78,84 @@ body {
 
 .post-trash {
     position: absolute;
-    top: 10px;
+    top: 18px;
     right: 10px;
     cursor: pointer;
+    color: grey;
+}
+
+.ellipsis {
+    margin-left: 83%;
+    position: relative;
+    bottom: 8px;
+}
+
+.ellipsis:hover {
+    cursor: pointer;
+}
+
+.trash-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.trash-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+}
+
+.trash-modal-content p {
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: black;
+}
+
+.trash-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trash-modal-button-no {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 45%;
+}
+
+.trash-modal-button-yes {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 45%;
 }
