@@ -1,19 +1,13 @@
-function showSignUpModal() {
-    var modal = document.getElementById("signup-modal");
+function navigateToBlogList() {
+    location.href = "html/postslist.html"
+}
+
+function showCreatePost() {
+    var modal = document.getElementById("create-post-modal");
     modal.style.display = "flex";
 }
 
-function hideSignUpModal() {
-    var modal = document.getElementById("signup-modal");
-    modal.style.display = "none";
-}
-
-function showSignInModal() {
-    var modal = document.getElementById("signin-modal");
-    modal.style.display = "flex";
-}
-
-function hideSignInModal() {
-    var modal = document.getElementById("signin-modal");
+function hideCreatePostModal() {
+    var modal = document.getElementById("create-post-modal");
     modal.style.display = "none";
 }
