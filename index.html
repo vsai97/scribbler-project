@@ -6,8 +6,10 @@
     
     <!-- TODO: Include Google Fonts file here -->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet"/>
     <link href='styles/common.css' rel='stylesheet'/>
+    <script src="scripts/index.js"></script>
 
 </head>
 
@@ -25,6 +27,31 @@
         <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
       </div>
     </div>
+
+    <!--Code for Sign Up modal-->
+    <div>
+        <div class="modal" id="signup-modal">
+          <div class="modal-content">
+  
+          <div class="modal-head">
+            <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
+            <h2 class="modal-title">Get Started</h2>
+          </div>
+          <hr>
+          <form>
+            <label for="name" class="label-text">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="username" class="label-text">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <label for="password" class="label-text">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <label for="confirmpassword" class="label-text">Confirm Password</label>
+            <input type="password" id="confirm_password" placeholder="Re-enter your password" required>
+            <button type="submit" class="signin-btn">Sign up</button>
+          </form>
+        </div>
+        </div>
+      </div>
     </div>
 </body>
 </html>
