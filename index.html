@@ -52,6 +52,30 @@
         </div>
         </div>
       </div>
+
+      <!--Code for Signin modal-->
+
+      <div class="modal" id="signin-modal">
+        <div class="modal-content">
+
+        <div class="modal-head">
+          <span onclick="hideSignInModal()" id="close" class="close">&times;</span>
+          <h2 class="modal-title">Welcome Back!</h2>
+        </div>
+        <hr>
+        <form>
+          <label for="username" class="label-text">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" required>
+          <label for="password" class="label-text">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <button type="submit" class="signin-btn">Sign In</button>
+        </form>
+
+        <p class="bottom-banner">Not a member?<span onclick="hideSignInModal();showSignUpModal()" class="signup">Sign Up</span></p>
+      </div>
+      </div>
+
+    </div>
     </div>
 </body>
 </html>
