@@ -6,54 +6,56 @@ body {
     background-size: cover;
 }
 
-#main-container-div{
+#main-container-div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
     width: 100%;
-  }
+}
 
-  .header{
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
-  }
-  
-  .title-container{
+}
+
+.title-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
 
-  .title{
+.title {
     font-family: 'Montez', cursive;
     font-size: 30px;
     color: blue;
     margin: 0;
-  }
-  
-  .sub-title{
+}
+
+.sub-title {
     font-family: 'Marck Script', cursive;
     font-size: 10;
     color: black;
     margin: 0;
-  }
-  .login-buttons-container{
+}
+
+.login-buttons-container {
     padding: 10px;
-  }
-  .blue-button{
+}
+
+.blue-button {
     background-color: blue;
-    padding:15px;
+    padding: 15px;
     padding-right: 30px;
-    padding-left:30px;
-    color:white;
+    padding-left: 30px;
+    color: white;
     font-family: 'Ubuntu Condensed';
     font-size: 16px;
-  }
+}
 
-  .modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -62,55 +64,55 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     justify-content: center;
     align-items: center;
     color: black;
-  }
+}
 
-  .modal-content{
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 40%;
-  }
-  
-  .modal-head {
+}
+
+.modal-head {
     display: flex;
     flex-direction: column;
-  }
-  
-  .close {
+}
+
+.close {
     display: flex;
     align-self: flex-end;
     cursor: pointer;
-  }
-  
-  .modal-title{
+}
+
+.modal-title {
     align-self: flex-start;
     font-family: 'Roboto';
-  }
+}
 
-  form {
+form {
     display: flex;
     flex-direction: column;
-  }
-  
-  input {
+}
+
+input {
     padding: 10px;
     outline: none;
     font-family: 'Roboto';
-  }
+}
 
-  .label-text {
+.label-text {
     font-weight: bold;
     margin: 10px 0;
     font-family: 'Roboto';
-  }
-  
-  .signin-btn {
+}
+
+.signin-btn {
     background-color: green;
     padding: 10px;
     border: none;
@@ -119,18 +121,17 @@ body {
     margin-top: 20px;
     cursor: pointer;
     font-family: 'Roboto';
-  }  
+}
 
-  .signup{
+.signup {
     color: blue;
     font-weight: bolder;
     margin-left: 10px;
     cursor: pointer;
     font-family: 'Roboto';
-  }
+}
 
-  .bottom-banner{
+.bottom-banner {
     font-family: 'Roboto';
     margin-left: 36%;
-  }
-  
+}
