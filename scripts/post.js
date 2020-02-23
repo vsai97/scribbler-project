@@ -87,10 +87,13 @@ function addComment() {
 function incrementCounter() {
     likesCount++;
     var likesCountDiv = document.getElementById('likesCount');
+    var likeBtn = document.getElementsByClassName('postLike')[0];
     if (likesCount == 1) {
         var firstLikeDiv = document.getElementById('firstLike');
         firstLikeDiv.style.display = 'none';
         likesCountDiv.style.display = 'block';
+        likeBtn.innerHTML =
+            'Liked <i style="font-size: 14px;font-weight: bolder;" class="fa fa-thumbs-up" aria-hidden="true"></i>';
 
     }
 
