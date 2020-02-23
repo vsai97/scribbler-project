@@ -1,0 +1,119 @@
+#main-container-div {
+    background-color: white!important;
+}
+
+.blogTitle {
+    font-size: 150%;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-align: center;
+}
+
+.blogText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5px;
+}
+
+.blogAuthor {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 0px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: table-row;
+    justify-content: space-between;
+}
+
+.postMainLayout {
+    display: flex;
+    flex-direction: row;
+    display: table;
+}
+
+.postAuthor {
+    display: table-cell;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.postEdit {
+    color: white;
+    background-color: #e60073;
+    box-shadow: 0px 5px 12px -4px #e60073;
+    font-family: 'Roboto';
+    margin: 10px;
+    cursor: pointer;
+    font-family: Abel;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: table-cell;
+    text-align: center;
+    width: 90px;
+    height: 35px;
+}
+
+#editedTitle {
+    font-size: 100%;
+    border: none;
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-align: center;
+    max-width: 100%;
+}
+
+.postLike {
+    color: white;
+    background-color: #e60073;
+    box-shadow: 0px 5px 12px -4px #e60073;
+    font-family: 'Roboto';
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px 18px;
+    font-size: 14px;
+    display: table-cell;
+    text-align: right;
+}
+
+.postComment {
+    font-family: 'Roboto';
+    text-align: center;
+    width: 120px;
+    color: white;
+    background-color: #e60073;
+    box-shadow: 0px 5px 12px -4px #e60073;
+    margin: 10px;
+    cursor: pointer;
+    padding: 7px 14px;
+    font-size: 14px;
+    display: table-cell;
+    text-align: center;
+}
+
+.commentPost {
+    padding-left: 5px;
+    outline: none;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.comment {
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 14px;
+    margin: 20px;
+    position: relative;
+    top: 20;
+    padding: 10px;
+}
+
+#listAllComments {
+    background-color: #EEECEA;
+    margin: 10px;
+}
+
+.txtBlog {
+    display: table-cell;
+    overflow: scroll;
+}

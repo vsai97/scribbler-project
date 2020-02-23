@@ -1,0 +1,232 @@
+<head>
+    <link href='../styles/post.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/common.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="../scripts/common.js"></script>
+</head>
+
+<body>
+    <div id="main-container-div">
+        <div class="header">
+            <div class="title-container">
+                <p class="title">ScriBBler</p>
+                <p class="sub-title">Explore, Imagine, Create</p>
+            </div>
+            <div class="login-buttons-container">
+                <button onclick="showSignInModal()" class="blue-button" type="button">Sign In</button>
+                <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Insert code for Sign In modal here -->
+        <div class="modal" id="signin-modal">
+            <div class="modal-content">
+
+                <div class="modal-head">
+                    <span onclick="hideSignInModal()" id="close" class="close">&times;</span>
+                    <h2 class="modal-title">Welcome Back!</h2>
+                </div>
+
+                <hr>
+
+                <form>
+                    <label for="username" class="label-text">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <button type="submit" onclick="signin(username, password)" class="signin-btn">Sign In</button>
+                </form>
+
+                <p class=bottom-banner>Not a member?
+                    <span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Insert code for Sign Up modal here -->
+        <div class="modal" id="signup-modal">
+            <div class="modal-content">
+
+                <div class="modal-head">
+                    <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
+                    <h2 class="modal-title">Get Started</h2>
+                </div>
+
+                <hr>
+
+                <form>
+                    <label for="fullname" class="label-text">Full name</label>
+                    <input type="text" id="fullname" placeholder="Enter Full Name" required>
+                    <label for="username" class="label-text">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <label for="confirmpassword" class="label-text">Confirm Password</label>
+                    <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+                    <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)"
+                        class="signin-btn">Sign up</button>
+                </form>
+
+            </div>
+        </div>
+
+        <!--Blog post code-->
+        <div class="postMainLayout">
+            <div class="blogContent">
+                <div id="blogTitle" class="blogTitle">
+                    <h id="blogTitleHeading">Everything you should know about ‘module’ & ‘require’ in Node.js</h>
+                </div>
+            </div>
+            <div class="blogAuthor">
+
+                <!-- Insert code for Edit/Save button and  -->
+                <p class="postAuthor">Srishti Gupta</p>
+                <div id="editPost" onclick="toggleEditSave()">
+                    <button class="postEdit" id="edtPstBtn">Edit
+                        <i style="font-size: 14px;font-weight: bolder;" class="fa fa-pencil-square-o"
+                            aria-hidden="true"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="blogText" id="blogBodyId">
+                <p id="blogBody">
+                    Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have
+                    a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.
+                </p>
+            </div>
+        </div>
+        <!--Code for like button-->
+        <div>
+            <button class="postLike" onclick="incrementCounter()">Like
+                <i style="font-size: 14px;font-weight: bolder;" class="fa fa-thumbs-up" aria-hidden="true"></i>
+
+            </button>
+            <p style="font-size: 10px; font-family: 'Abel', sans-serif;padding-left: 5px;display:none" id="likesCount">
+
+            </p>
+            <div style="font-family: 'Abel', sans-serif; padding-left: 5px" id="firstLike">Be the first one to like
+                this!</div>
+        </div>
+
+        <!--Code for comments-->
+        <div class="commentPost">
+            <textarea id="txtCommentCommentPost" class="commentPost" rows="4" cols="100"
+                placeholder="Leave a comment"></textarea>
+        </div>
+        <button class="postComment" onclick="addComment()">Comment</button>
+        <div class="commentSection">
+            <h3>All Comments</h3>
+            <div class="allComments" id="listAllComments">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../scripts/post.js"></script>
+
+</html>
